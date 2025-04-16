@@ -1,6 +1,7 @@
 import os
 import numpy as np
 import robosuite as suite
+from robosuite import load_composite_controller_config
 import matplotlib.cm as cm
 
 from robosuite.utils.errors import RandomizationError
@@ -44,7 +45,7 @@ class ControlEnv:
             bddl_file_name
         ), f"[error] {bddl_file_name} does not exist!"
 
-        controller_configs = suite.load_controller_config(default_controller=controller)
+        controller_configs = load_composite_controller_config(default_controller=controller)
 
         problem_info = BDDLUtils.get_problem_info(bddl_file_name)
         # Check if we're using a multi-armed environment and use env_configuration argument if so
