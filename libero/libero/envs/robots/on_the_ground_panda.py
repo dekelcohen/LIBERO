@@ -22,7 +22,7 @@ class OnTheGroundPanda(ManipulatorModel):
 
     @property
     def default_base(self):
-        return None
+        return "NoActuationBase"
 
     @property
     def default_gripper(self):
