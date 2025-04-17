@@ -15,7 +15,7 @@ class ControlEnv:
         self,
         bddl_file_name,
         robots=["Panda"],
-        controller="BASIC" # TODO: Investigate where this one goes "OSC_POSE",
+        controller="BASIC", # TODO: Investigate where this one goes "OSC_POSE",
         gripper_types="default",
         initialization_noise=None,
         use_camera_obs=True,
